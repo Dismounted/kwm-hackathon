@@ -5,6 +5,7 @@ var step2Clicked = {
     "Para4": false,
     "Para5": false
 };
+var step2ClickInProgress = false;
 
 $(function() {
     $("#Step1Continue").click(function() {
@@ -23,6 +24,16 @@ $(function() {
             }
         })
         .click(function() {
+            if (step2ClickInProgress == false && step2Clicked["Para1"] == false) {
+                step2ClickInProgress = true;
+                $.each(step2Clicked, function(key, val) {
+                    if (val == true) {
+                        $("#Step2" + key).click();
+                        $("#Step2" + key).mouseout();
+                    }
+                });
+                step2ClickInProgress = false;
+            }
             step2Clicked["Para1"] = (step2Clicked["Para1"] ? false : true);
             $("#Step2Para1Left").fadeToggle();
             $("#Step2Para1Right").fadeToggle();
@@ -39,6 +50,16 @@ $(function() {
             }
         })
         .click(function() {
+            if (step2ClickInProgress == false && step2Clicked["Para2"] == false) {
+                step2ClickInProgress = true;
+                $.each(step2Clicked, function(key, val) {
+                    if (val == true) {
+                        $("#Step2" + key).click();
+                        $("#Step2" + key).mouseout();
+                    }
+                });
+                step2ClickInProgress = false;
+            }
             step2Clicked["Para2"] = (step2Clicked["Para2"] ? false : true);
             $("#Step2Para2Left").fadeToggle();
             $("#Step2Para2Right").fadeToggle();
@@ -55,6 +76,16 @@ $(function() {
             }
         })
         .click(function() {
+            if (step2ClickInProgress == false && step2Clicked["Para3"] == false) {
+                step2ClickInProgress = true;
+                $.each(step2Clicked, function(key, val) {
+                    if (val == true) {
+                        $("#Step2" + key).click();
+                        $("#Step2" + key).mouseout();
+                    }
+                });
+                step2ClickInProgress = false;
+            }
             step2Clicked["Para3"] = (step2Clicked["Para3"] ? false : true);
             $("#Step2Para3Left").fadeToggle();
             $("#Step2Para3Right").fadeToggle();
@@ -71,6 +102,16 @@ $(function() {
             }
         })
         .click(function() {
+            if (step2ClickInProgress == false && step2Clicked["Para4"] == false) {
+                step2ClickInProgress = true;
+                $.each(step2Clicked, function(key, val) {
+                    if (val == true) {
+                        $("#Step2" + key).click();
+                        $("#Step2" + key).mouseout();
+                    }
+                });
+                step2ClickInProgress = false;
+            }
             step2Clicked["Para4"] = (step2Clicked["Para4"] ? false : true);
             $("#Step2Para4Left").fadeToggle();
             $("#Step2Para4Right").fadeToggle();
@@ -87,6 +128,16 @@ $(function() {
             }
         })
         .click(function() {
+            if (step2ClickInProgress == false && step2Clicked["Para5"] == false) {
+                step2ClickInProgress = true;
+                $.each(step2Clicked, function(key, val) {
+                    if (val == true) {
+                        $("#Step2" + key).click();
+                        $("#Step2" + key).mouseout();
+                    }
+                });
+                step2ClickInProgress = false;
+            }
             step2Clicked["Para5"] = (step2Clicked["Para5"] ? false : true);
             $("#Step2Para5Left").fadeToggle();
             $("#Step2Para5Right").fadeToggle();
