@@ -1,0 +1,13 @@
+/* Padding for fixed top navbar */
+body { padding-top: 70px; }
+.anchor-fix {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+/* Spacing and what not */
+.page-header { margin-top: 0; }
+.row-content-top { margin-bottom: 10px; }
