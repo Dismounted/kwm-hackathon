@@ -1,5 +1,5 @@
 var step2Clicked = {
-    "Para1": false,
+    "Para1_1": false,
     "Para2": false,
     "Para3": false,
     "Para4": false,
@@ -12,19 +12,19 @@ $(function() {
         $("#Step1").slideUp();
         $("#Step2").delay(750).slideDown();
     });
-    $("#Step2Para1")
+    $("#Step2Para1_1 > h3")
         .mouseover(function() {
-            if (step2Clicked["Para1"] == false) {
+            if (step2Clicked["Para1_1"] == false) {
                 $(this).children("span").css("background-color", "#f1d5f6");
             }
         })
         .mouseout(function() {
-            if (step2Clicked["Para1"] == false) {
+            if (step2Clicked["Para1_1"] == false) {
                 $(this).children("span").css("background-color", "inherit");
             }
         })
         .click(function() {
-            if (step2ClickInProgress == false && step2Clicked["Para1"] == false) {
+            if (step2ClickInProgress == false && step2Clicked["Para1_1"] == false) {
                 step2ClickInProgress = true;
                 $.each(step2Clicked, function(key, val) {
                     if (val == true) {
@@ -34,10 +34,11 @@ $(function() {
                 });
                 step2ClickInProgress = false;
             }
-            step2Clicked["Para1"] = (step2Clicked["Para1"] ? false : true);
-            $("#Step2Para1Left").fadeToggle();
-            $("#Step2Para1Right").fadeToggle();
+            step2Clicked["Para1_1"] = (step2Clicked["Para1_1"] ? false : true);
+            $("#Step2Para1_1Left").fadeToggle();
+            $("#Step2Para1_1Right").fadeToggle();
         });
+    $("#Step2Para1_1 > div").trumbowyg();
     $("#Step2Para2")
         .mouseover(function() {
             if (step2Clicked["Para2"] == false) {
