@@ -505,6 +505,6 @@ $(function() {
             $("#Step2Para6_3Right").fadeToggle();
         });
     $("#Step2Para5_1_1 > .col-sm-11").click(function() {
-        $(this).trumbowyg();
+        $(this).children("div").trumbowyg();
     });
 });
