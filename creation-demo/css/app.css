@@ -24,3 +24,9 @@ body { padding-top: 70px; }
 .navbar-inverse {
     background-color: #ccc;
 }
+.list-group-item-text {
+    color: #555;
+}
+.list-group {
+    margin-bottom: 0;
+}

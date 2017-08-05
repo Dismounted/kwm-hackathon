@@ -34,6 +34,9 @@ $(function() {
     $("#Step2Continue").click(function() {
         $("#Step2").slideUp();
         $("#Step3").delay(750).slideDown();
+        $(".list-group-item-success").delay(500).each(function() {
+            $("#" + $(this).data("nextStepId")).slideDown();
+        });
     });
     $(".gutter-para")
         .mouseenter(function() {
@@ -297,6 +300,14 @@ $(function() {
         if (step2EditorClicked["Para_5_2_3"] == false) {
             $(this).children("div").trumbowyg();
             step2EditorClicked["Para_5_2_3"] = true;
+        }
+    });
+    $(".list-group-item").click(function(e) {
+        e.preventDefault();
+        if ($(this).hasClass("list-group-item-success")) {
+            $(this).removeClass("list-group-item-success");
+        } else {
+            $(this).addClass("list-group-item-success");
         }
     });
 });
