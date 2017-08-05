@@ -18,3 +18,6 @@ body { padding-top: 70px; }
     left: 15px;
     background-size: contain;
 }
+#Step2Para5_2Left > .panel-body li {
+    margin-left: -20px;
+}
