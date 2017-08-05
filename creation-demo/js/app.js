@@ -30,10 +30,10 @@ $(function() {
         $("#Step3").delay(750).slideDown();
     });
     $(".gutter-para")
-        .mouseover(function() {
+        .mouseenter(function() {
             $(this).fadeTo("fast", 1);
         })
-        .mouseout(function() {
+        .mouseleave(function() {
             $(this).fadeTo("fast", 0.5);
         });
     $("#Step2Para1_1 > h3")
@@ -504,7 +504,7 @@ $(function() {
             $("#Step2Para6_3Left").fadeToggle();
             $("#Step2Para6_3Right").fadeToggle();
         });
-    $("#Step2Para1_1 > div").click(function() {
-        // $(this).trumbowyg();
+    $("#Step2Para5_1_1 > .col-sm-11").click(function() {
+        $(this).trumbowyg();
     });
 });
