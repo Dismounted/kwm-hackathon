@@ -141,7 +141,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'Adam', 'Adam normal';
+  font-family:'CenturyGothic', 'Century Gothic';
   font-weight:400;
   font-style:normal;
   font-size:48px;
@@ -151,10 +151,10 @@
   border-width:0px;
   position:absolute;
   left:157px;
-  top:20px;
+  top:8px;
   width:665px;
   height:55px;
-  font-family:'Adam', 'Adam normal';
+  font-family:'CenturyGothic', 'Century Gothic';
   font-weight:400;
   font-style:normal;
   font-size:48px;
@@ -1354,7 +1354,7 @@
 #u319 {
   border-width:0px;
   position:absolute;
-  left:1045px;
+  left:984px;
   top:298px;
   width:225px;
   height:64px;
@@ -1405,7 +1405,7 @@
 #u321 {
   border-width:0px;
   position:absolute;
-  left:1045px;
+  left:984px;
   top:372px;
   width:225px;
   height:64px;
@@ -1456,7 +1456,7 @@
 #u323 {
   border-width:0px;
   position:absolute;
-  left:1045px;
+  left:984px;
   top:446px;
   width:225px;
   height:64px;
@@ -1499,7 +1499,7 @@
 #u325 {
   border-width:0px;
   position:absolute;
-  left:959px;
+  left:898px;
   top:133px;
   width:324px;
   height:141px;
