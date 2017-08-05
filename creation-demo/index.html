@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contract Nest</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/trumbowyg.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">&nbsp;</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="content">
+        <div class="row" id="Step1">
+            <main class="col-sm-12" role="main">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <h1><span class="glyphicon glyphicon-file"></span> Select a contract type</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="ContractType" class="col-sm-3 control-label">Contract Type</label>
+                                <div class="col-sm-6">
+                                    <select id="ContractType" class="form-control">
+                                        <option disabled>&nbsp;-- HIGH-LEVEL PROCUREMENT --</option>
+                                        <option disabled>&nbsp;Complex Procurement Contract</option>
+                                        <option disabled>&nbsp;Support Procurement Contract</option>
+                                        <option disabled>&nbsp;</option>
+                                        <option disabled>&nbsp;-- MID-LEVEL PROCUREMENT --</option>
+                                        <option disabled>&nbsp;Support Contract</option>
+                                        <option selected>&nbsp;Services Contract</option>
+                                        <option disabled>&nbsp;Standing Offer for Goods</option>
+                                        <option disabled>&nbsp;Standing Offer for Services</option>
+                                        <option disabled>&nbsp;</option>
+                                        <option disabled>&nbsp;-- LOW-LEVEL PROCUREMENT --</option>
+                                        <option disabled>&nbsp;Standing Offer for Goods and Maintenance Services</option>
+                                        <option disabled>&nbsp;Shortform Goods Contract</option>
+                                        <option disabled>&nbsp;Shortform Services Contract</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <button type="button" class="btn btn-info" id="Step1Continue">Continue &raquo;</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="row" id="Step2" style="display: none;">
+            <main class="col-sm-12" role="main">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <h1><span class="glyphicon glyphicon-pencil"></span> Services Contract</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">1. Roles and Responsibilities</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para1_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para1_1">
+                        <h3 class="h5"><span>1.1. Contract Representatives</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para1_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para1_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para1_2">
+                        <h3 class="h5"><span>1.2. Notices</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para1_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">2. Provision of the Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para2_1">
+                        <h3 class="h5"><span>2.1. Design</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para2_2">
+                        <h3 class="h5"><span>2.2. Development</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_3Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para2_3">
+                        <h3 class="h5"><span>2.3. Production</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para2_3Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">3. Intellectual Property</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para3_1">
+                        <h3 class="h5"><span>3.1. Design</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para3_2">
+                        <h3 class="h5"><span>3.2. Intellectual Property Licence</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_3Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para3_3">
+                        <h3 class="h5"><span>3.3. Release to Third Parties</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_3Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_4Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para3_4">
+                        <h3 class="h5"><span>3.4. Moral Rights</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para3_4Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">4. Price and Payment</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para4_1">
+                        <h3 class="h5"><span>4.1. Price and Price Basis</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para4_2">
+                        <h3 class="h5"><span>4.2. Payment</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_3Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para4_3">
+                        <h3 class="h5"><span>4.3. Taxes and Duties</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para4_3Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">5. Insurance and Liability</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para5_1">
+                        <h3 class="h5"><span>5.1. Indemnity</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para5_2">
+                        <h3 class="h5"><span>5.2. Insurance</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_3Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para5_3">
+                        <h3 class="h5"><span>5.3. Intellectual Property Indemnity</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para5_3Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="h4">6. Warranties</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_1Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para6_1">
+                        <h3 class="h5"><span>6.1. Fitness for Purpose</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_1Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_2Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para6_2">
+                        <h3 class="h5"><span>6.2. Warranties and Representations</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_2Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_3Left" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="Step2Para6_3">
+                        <h3 class="h5"><span>6.3. Conflict of Interest</span></h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia vitae est ut ultricies. Aenean massa lorem, molestie non tincidunt ac, posuere at purus. Nullam laoreet tortor justo, sit amet hendrerit augue consequat et. Fusce sollicitudin tellus nisl, ut elementum ex maximus eu. Donec ultrices nisl non massa pretium, ut aliquam diam dictum. Phasellus congue lacinia quam vel ultrices. Aliquam ac tortor pharetra, pretium diam sed, pharetra neque. Cras non magna odio. Maecenas ac odio urna. Curabitur et mi in neque lobortis vehicula congue sit amet mi. Donec pulvinar tempor velit, eget porttitor mi eleifend id. Morbi ut porttitor ipsum. Integer sit amet magna ut mauris auctor lobortis et quis nulla. Vestibulum ac ligula mattis, auctor dui ut, iaculis nulla. Etiam efficitur neque non arcu blandit efficitur.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info gutter-para" id="Step2Para6_3Right" style="display: none; opacity: 0.5;">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <button type="button" class="btn btn-success" id="Step2Continue"><span class="glyphicon glyphicon-cloud-upload"></span> Hatch</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="row" id="Step3" style="display: none;">
+            <main class="col-sm-12" role="main">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <h1><span class="glyphicon glyphicon-transfer"></span> All done...</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Cool.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="row">
+            <footer class="col-sm-12" role="contentinfo">
+                <hr />
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Create Contract</li>
+                </ol>
+                <p class="text-center">
+                    <em>Where your contracts... take flight!</em><br>
+                    Copyright &copy; <a href="#">Contract Nest</a> 2017
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/trumbowyg.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
