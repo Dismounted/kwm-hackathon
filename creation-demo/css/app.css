@@ -13,11 +13,14 @@ body { padding-top: 70px; }
 .row-content-top { margin-bottom: 10px; }
 .navbar-brand {
     position: relative;
-    background: url(../img/logo.png);
-    width: 113px;
-    left: 15px;
+    background: url(../img/logo-2.png);
+    width: 72px;
+    left: 20px;
     background-size: contain;
 }
 #Step2Para5_2Left > .panel-body li {
     margin-left: -20px;
+}
+.navbar-inverse {
+    background-color: #ccc;
 }
